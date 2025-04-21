@@ -1,34 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página HTML Básica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple - Official Site</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
-  <header>
-    <h1>Bem-vindo à minha página!</h1>
-  </header>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-logo">Apple</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">TV & Home</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-  </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>iPhone 15 Pro</h1>
+                <h2>Titanium. So strong. So light. So Pro.</h2>
+                <div class="cta-links">
+                    <a href="#" class="learn-more">Learn more ></a>
+                    <a href="#" class="buy">Buy ></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/800x450" alt="iPhone 15 Pro">
+            </div>
+        </section>
 
-  <main>
-    <section>
-      <h2>Seção Principal</h2>
-      <p>Este é um parágrafo de exemplo em uma página HTML simples.</p>
-    </section>
-  </main>
+        <section class="product-grid">
+            <div class="product-card">
+                <h3>MacBook Air</h3>
+                <p>Supercharged by M2</p>
+                <div class="cta-links">
+                    <a href="#" class="learn-more">Learn more ></a>
+                    <a href="#" class="buy">Buy ></a>
+                </div>
+                <img src="https://via.placeholder.com/500x300" alt="MacBook Air">
+            </div>
+            
+            <div class="product-card">
+                <h3>iPad Pro</h3>
+                <p>Supercharged by M2 chip</p>
+                <div class="cta-links">
+                    <a href="#" class="learn-more">Learn more ></a>
+                    <a href="#" class="buy">Buy ></a>
+                </div>
+                <img src="https://via.placeholder.com/500x300" alt="iPad Pro">
+            </div>
+            
+            <div class="product-card">
+                <h3>Apple Watch Series 9</h3>
+                <p>Smarter. Brighter. Mightier.</p>
+                <div class="cta-links">
+                    <a href="#" class="learn-more">Learn more ></a>
+                    <a href="#" class="buy">Buy ></a>
+                </div>
+                <img src="https://via.placeholder.com/500x300" alt="Apple Watch Series 9">
+            </div>
+            
+            <div class="product-card">
+                <h3>AirPods Pro</h3>
+                <p>Adaptive Audio. Now playing.</p>
+                <div class="cta-links">
+                    <a href="#" class="learn-more">Learn more ></a>
+                    <a href="#" class="buy">Buy ></a>
+                </div>
+                <img src="https://via.placeholder.com/500x300" alt="AirPods Pro">
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Seu Nome</p>
-  </footer>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Shop and Learn</h4>
+                <ul>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">Apple Fitness+</a></li>
+                    <li><a href="#">Apple News+</a></li>
+                    <li><a href="#">Apple Arcade</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Apple Store</h4>
+                <ul>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Genius Bar</a></li>
+                    <li><a href="#">Today at Apple</a></li>
+                    <li><a href="#">Apple Camp</a></li>
+                    <li><a href="#">Shopping Help</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright © 2023 Apple Inc. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
